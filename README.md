@@ -6,7 +6,12 @@ hello world!
 
 int main()
 {
-  puts("hello world"):
+     ngx_int_t         i;
+    ngx_log_t        *log;
+    ngx_cycle_t      *cycle, init_cycle;
+    ngx_core_conf_t  *ccf;
+
+    ngx_debug_init();
   retun 0;
 }
 
