@@ -6,15 +6,17 @@
 
 #IncludeRegexTransform: 
 
+/home/mengfan/project/test/hello/hello.cpp
+ctime
+-
 ../include/hello.h
+/home/mengfan/project/test/include/hello.h
+
+/home/mengfan/project/test/include/hello.h
 iostream
 -
 
-/home/mengfan/project/test/hello/hello.cpp
-hello.h
-/home/mengfan/project/test/hello/hello.h
-
 /home/mengfan/project/test/main/main.cpp
-hello.h
-/home/mengfan/project/test/main/hello.h
+../include/hello.h
+/home/mengfan/project/test/include/hello.h
 
