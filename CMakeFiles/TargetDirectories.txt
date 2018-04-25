@@ -1,1 +1,0 @@
-/home/mengfan/project/test/CMakeFiles/hello_test.dir

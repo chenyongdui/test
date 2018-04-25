@@ -1,1 +1,0 @@
-/home/mengfan/project/test/bin/hello_test
