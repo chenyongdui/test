@@ -1,3 +1,6 @@
+
+SET(TARGET_BIN /home/mengfan/project/test)
+
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 PROJECT(hello)
 
@@ -15,4 +18,4 @@ INCLUDE_DIRECTORIES("${CMAKE_SOURCE_DIR}/include/")
 MESSAGE(STATUS "target(${RES_DATE})")
 ADD_EXECUTABLE(hello_test ${SOURCE_1} ${SOURCE_2})
 
-INSTALL(TARGETS hello_test RUNTIME DESTINATION /home/mengfan/project/test/bin)
+INSTALL(TARGETS hello_test RUNTIME DESTINATION ${TARGET_BIN}/bin)
