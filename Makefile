@@ -114,35 +114,53 @@ hello_test/fast:
 	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/build
 .PHONY : hello_test/fast
 
-# target to build an object file
-hello/hello.o:
-	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/hello/hello.o
+hello/hello.o: hello/hello.cpp.o
 .PHONY : hello/hello.o
 
-# target to preprocess a source file
-hello/hello.i:
-	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/hello/hello.i
+# target to build an object file
+hello/hello.cpp.o:
+	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/hello/hello.cpp.o
+.PHONY : hello/hello.cpp.o
+
+hello/hello.i: hello/hello.cpp.i
 .PHONY : hello/hello.i
 
-# target to generate assembly for a file
-hello/hello.s:
-	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/hello/hello.s
+# target to preprocess a source file
+hello/hello.cpp.i:
+	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/hello/hello.cpp.i
+.PHONY : hello/hello.cpp.i
+
+hello/hello.s: hello/hello.cpp.s
 .PHONY : hello/hello.s
 
-# target to build an object file
-main/main.o:
-	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/main/main.o
+# target to generate assembly for a file
+hello/hello.cpp.s:
+	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/hello/hello.cpp.s
+.PHONY : hello/hello.cpp.s
+
+main/main.o: main/main.cpp.o
 .PHONY : main/main.o
 
-# target to preprocess a source file
-main/main.i:
-	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/main/main.i
+# target to build an object file
+main/main.cpp.o:
+	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/main/main.cpp.o
+.PHONY : main/main.cpp.o
+
+main/main.i: main/main.cpp.i
 .PHONY : main/main.i
 
-# target to generate assembly for a file
-main/main.s:
-	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/main/main.s
+# target to preprocess a source file
+main/main.cpp.i:
+	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/main/main.cpp.i
+.PHONY : main/main.cpp.i
+
+main/main.s: main/main.cpp.s
 .PHONY : main/main.s
+
+# target to generate assembly for a file
+main/main.cpp.s:
+	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/main/main.cpp.s
+.PHONY : main/main.cpp.s
 
 # Help Target
 help:
