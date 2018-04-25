@@ -1,4 +1,5 @@
 
+SET( CMAKE_BUILD_TYPE Debug )
 SET(TARGET_BIN /home/mengfan/project/test)
 
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
