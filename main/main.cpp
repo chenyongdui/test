@@ -3,6 +3,7 @@
 int main()
 {
 	SayHello();
+	getchar();
 	return 0;
 }
 
