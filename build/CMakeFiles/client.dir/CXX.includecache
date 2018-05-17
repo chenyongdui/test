@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../base/common.h
+iostream
+-
+cstring
+-
+
+/home/mengfan/project/test/base/common.h
+iostream
+-
+cstring
+-
+
+/home/mengfan/project/test/base/study.cpp
+../base/common.h
+/home/mengfan/project/test/base/common.h
+../base/study.h
+/home/mengfan/project/test/base/study.h
+
+/home/mengfan/project/test/base/study.h
+iostream
+-
+
+/home/mengfan/project/test/client/include/network.h
+boost/asio.hpp
+-
+boost/enable_shared_from_this.hpp
+-
+
+/home/mengfan/project/test/client/src/main.cpp
+../include/network.h
+/home/mengfan/project/test/client/include/network.h
+
+/home/mengfan/project/test/client/src/network.cpp
+../base/common.h
+/home/mengfan/project/test/client/base/common.h
+../include/network.h
+/home/mengfan/project/test/client/include/network.h
+

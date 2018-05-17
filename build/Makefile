@@ -155,71 +155,168 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hello_test
+# Target rules for targets named client
 
 # Build rule for target.
-hello_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hello_test
-.PHONY : hello_test
+client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 client
+.PHONY : client
 
 # fast build rule for target.
-hello_test/fast:
-	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/build
-.PHONY : hello_test/fast
+client/fast:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
+.PHONY : client/fast
 
-hello/hello.o: hello/hello.cpp.o
+#=============================================================================
+# Target rules for targets named server
 
-.PHONY : hello/hello.o
+# Build rule for target.
+server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 server
+.PHONY : server
 
-# target to build an object file
-hello/hello.cpp.o:
-	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/hello/hello.cpp.o
-.PHONY : hello/hello.cpp.o
+# fast build rule for target.
+server/fast:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
+.PHONY : server/fast
 
-hello/hello.i: hello/hello.cpp.i
+base/study.o: base/study.cpp.o
 
-.PHONY : hello/hello.i
-
-# target to preprocess a source file
-hello/hello.cpp.i:
-	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/hello/hello.cpp.i
-.PHONY : hello/hello.cpp.i
-
-hello/hello.s: hello/hello.cpp.s
-
-.PHONY : hello/hello.s
-
-# target to generate assembly for a file
-hello/hello.cpp.s:
-	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/hello/hello.cpp.s
-.PHONY : hello/hello.cpp.s
-
-main/main.o: main/main.cpp.o
-
-.PHONY : main/main.o
+.PHONY : base/study.o
 
 # target to build an object file
-main/main.cpp.o:
-	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/main/main.cpp.o
-.PHONY : main/main.cpp.o
+base/study.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/base/study.cpp.o
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/study.cpp.o
+.PHONY : base/study.cpp.o
 
-main/main.i: main/main.cpp.i
+base/study.i: base/study.cpp.i
 
-.PHONY : main/main.i
+.PHONY : base/study.i
 
 # target to preprocess a source file
-main/main.cpp.i:
-	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/main/main.cpp.i
-.PHONY : main/main.cpp.i
+base/study.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/base/study.cpp.i
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/study.cpp.i
+.PHONY : base/study.cpp.i
 
-main/main.s: main/main.cpp.s
+base/study.s: base/study.cpp.s
 
-.PHONY : main/main.s
+.PHONY : base/study.s
 
 # target to generate assembly for a file
-main/main.cpp.s:
-	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/main/main.cpp.s
-.PHONY : main/main.cpp.s
+base/study.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/base/study.cpp.s
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/study.cpp.s
+.PHONY : base/study.cpp.s
+
+client/src/main.o: client/src/main.cpp.o
+
+.PHONY : client/src/main.o
+
+# target to build an object file
+client/src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/src/main.cpp.o
+.PHONY : client/src/main.cpp.o
+
+client/src/main.i: client/src/main.cpp.i
+
+.PHONY : client/src/main.i
+
+# target to preprocess a source file
+client/src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/src/main.cpp.i
+.PHONY : client/src/main.cpp.i
+
+client/src/main.s: client/src/main.cpp.s
+
+.PHONY : client/src/main.s
+
+# target to generate assembly for a file
+client/src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/src/main.cpp.s
+.PHONY : client/src/main.cpp.s
+
+client/src/network.o: client/src/network.cpp.o
+
+.PHONY : client/src/network.o
+
+# target to build an object file
+client/src/network.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/src/network.cpp.o
+.PHONY : client/src/network.cpp.o
+
+client/src/network.i: client/src/network.cpp.i
+
+.PHONY : client/src/network.i
+
+# target to preprocess a source file
+client/src/network.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/src/network.cpp.i
+.PHONY : client/src/network.cpp.i
+
+client/src/network.s: client/src/network.cpp.s
+
+.PHONY : client/src/network.s
+
+# target to generate assembly for a file
+client/src/network.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/src/network.cpp.s
+.PHONY : client/src/network.cpp.s
+
+server/src/main.o: server/src/main.cpp.o
+
+.PHONY : server/src/main.o
+
+# target to build an object file
+server/src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/src/main.cpp.o
+.PHONY : server/src/main.cpp.o
+
+server/src/main.i: server/src/main.cpp.i
+
+.PHONY : server/src/main.i
+
+# target to preprocess a source file
+server/src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/src/main.cpp.i
+.PHONY : server/src/main.cpp.i
+
+server/src/main.s: server/src/main.cpp.s
+
+.PHONY : server/src/main.s
+
+# target to generate assembly for a file
+server/src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/src/main.cpp.s
+.PHONY : server/src/main.cpp.s
+
+server/src/network.o: server/src/network.cpp.o
+
+.PHONY : server/src/network.o
+
+# target to build an object file
+server/src/network.cpp.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/src/network.cpp.o
+.PHONY : server/src/network.cpp.o
+
+server/src/network.i: server/src/network.cpp.i
+
+.PHONY : server/src/network.i
+
+# target to preprocess a source file
+server/src/network.cpp.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/src/network.cpp.i
+.PHONY : server/src/network.cpp.i
+
+server/src/network.s: server/src/network.cpp.s
+
+.PHONY : server/src/network.s
+
+# target to generate assembly for a file
+server/src/network.cpp.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/src/network.cpp.s
+.PHONY : server/src/network.cpp.s
 
 # Help Target
 help:
@@ -233,13 +330,23 @@ help:
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
-	@echo "... hello_test"
-	@echo "... hello/hello.o"
-	@echo "... hello/hello.i"
-	@echo "... hello/hello.s"
-	@echo "... main/main.o"
-	@echo "... main/main.i"
-	@echo "... main/main.s"
+	@echo "... client"
+	@echo "... server"
+	@echo "... base/study.o"
+	@echo "... base/study.i"
+	@echo "... base/study.s"
+	@echo "... client/src/main.o"
+	@echo "... client/src/main.i"
+	@echo "... client/src/main.s"
+	@echo "... client/src/network.o"
+	@echo "... client/src/network.i"
+	@echo "... client/src/network.s"
+	@echo "... server/src/main.o"
+	@echo "... server/src/main.i"
+	@echo "... server/src/main.s"
+	@echo "... server/src/network.o"
+	@echo "... server/src/network.i"
+	@echo "... server/src/network.s"
 .PHONY : help
 
 

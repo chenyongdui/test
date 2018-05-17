@@ -6,21 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/mengfan/project/test/hello/hello.cpp
-ctime
--
-boost/timer.hpp
--
-../include/hello.h
-/home/mengfan/project/test/include/hello.h
-boost/asio.hpp
--
-
-/home/mengfan/project/test/include/hello.h
+/home/mengfan/project/test/server/include/network.h
 iostream
 -
+boost/asio.hpp
+-
+boost/enable_shared_from_this.hpp
+-
 
-/home/mengfan/project/test/main/main.cpp
-../include/hello.h
-/home/mengfan/project/test/include/hello.h
+/home/mengfan/project/test/server/src/main.cpp
+../include/network.h
+/home/mengfan/project/test/server/include/network.h
+
+/home/mengfan/project/test/server/src/network.cpp
+../include/network.h
+/home/mengfan/project/test/server/include/network.h
 

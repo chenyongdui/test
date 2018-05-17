@@ -1,0 +1,1 @@
+/usr/bin/c++    -lboost_system -std=c++11 -g   CMakeFiles/client.dir/base/study.cpp.o CMakeFiles/client.dir/client/src/main.cpp.o CMakeFiles/client.dir/client/src/network.cpp.o  -o client -rdynamic 

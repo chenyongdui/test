@@ -19,9 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{0012A0B3-3CA8-43AE-84B3-BC6591C0B802}</ProjectGuid>
+    <ProjectGuid>{6F1D001B-C798-4B56-AA28-CFA0DB61ED95}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -64,8 +63,6 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <TargetName>hello_$(ProjectName)</TargetName>
-    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>true</LinkIncremental>
@@ -100,11 +97,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="hello\hello.cpp" />
-    <ClCompile Include="main\main.cpp" />
+    <ClCompile Include="build\cmakefiles\3.4.0\compileridcxx\CMakeCXXCompilerId.cpp" />
+    <ClCompile Include="build\cmakefiles\3.4.0\compileridc\CMakeCCompilerId.c" />
+    <ClCompile Include="build\cmakefiles\feature_tests.c" />
+    <ClCompile Include="build\cmakefiles\feature_tests.cxx" />
+    <ClCompile Include="client\src\main.cpp" />
+    <ClCompile Include="client\src\network.cpp" />
+    <ClCompile Include="server\src\main.cpp" />
+    <ClCompile Include="server\src\network.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\hello.h" />
+    <ClInclude Include="base\common.h" />
+    <ClInclude Include="client\include\network.h" />
+    <ClInclude Include="server\include\network.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build\cmakefiles\3.4.0\CMakeDetermineCompilerABI_C.bin" />
+    <None Include="build\cmakefiles\3.4.0\CMakeDetermineCompilerABI_CXX.bin" />
+    <None Include="build\cmakefiles\feature_tests.bin" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

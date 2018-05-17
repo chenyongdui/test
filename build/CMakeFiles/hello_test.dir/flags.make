@@ -6,5 +6,5 @@ CXX_FLAGS =  -lboost_system -std=c++11 -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/mengfan/project/test/include 
+CXX_INCLUDES = -I/home/mengfan/project/test/server/include 
 

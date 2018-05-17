@@ -1,1 +1,2 @@
-/home/mengfan/project/test/build/CMakeFiles/hello_test.dir
+/home/mengfan/project/test/build/CMakeFiles/client.dir
+/home/mengfan/project/test/build/CMakeFiles/server.dir

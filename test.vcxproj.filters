@@ -15,16 +15,51 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="hello\hello.cpp">
+    <ClCompile Include="server\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="main\main.cpp">
+    <ClCompile Include="server\src\network.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="build\cmakefiles\feature_tests.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="build\cmakefiles\feature_tests.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="build\cmakefiles\3.4.0\compileridc\CMakeCCompilerId.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="build\cmakefiles\3.4.0\compileridcxx\CMakeCXXCompilerId.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\src\network.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\hello.h">
+    <ClInclude Include="server\include\network.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="base\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="client\include\network.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build\cmakefiles\feature_tests.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="build\cmakefiles\3.4.0\CMakeDetermineCompilerABI_C.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="build\cmakefiles\3.4.0\CMakeDetermineCompilerABI_CXX.bin">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

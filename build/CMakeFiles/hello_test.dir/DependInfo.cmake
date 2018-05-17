@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/mengfan/project/test/hello/hello.cpp" "/home/mengfan/project/test/build/CMakeFiles/hello_test.dir/hello/hello.cpp.o"
-  "/home/mengfan/project/test/main/main.cpp" "/home/mengfan/project/test/build/CMakeFiles/hello_test.dir/main/main.cpp.o"
+  "/home/mengfan/project/test/server/src/main.cpp" "/home/mengfan/project/test/build/CMakeFiles/hello_test.dir/server/src/main.cpp.o"
+  "/home/mengfan/project/test/server/src/network.cpp" "/home/mengfan/project/test/build/CMakeFiles/hello_test.dir/server/src/network.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../include"
+  "../server/include"
   )
 
 # Targets to which this target links.

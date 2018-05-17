@@ -57,64 +57,64 @@ include CMakeFiles/hello_test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/hello_test.dir/flags.make
 
-CMakeFiles/hello_test.dir/main/main.cpp.o: CMakeFiles/hello_test.dir/flags.make
-CMakeFiles/hello_test.dir/main/main.cpp.o: ../main/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mengfan/project/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hello_test.dir/main/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello_test.dir/main/main.cpp.o -c /home/mengfan/project/test/main/main.cpp
+CMakeFiles/hello_test.dir/server/src/main.cpp.o: CMakeFiles/hello_test.dir/flags.make
+CMakeFiles/hello_test.dir/server/src/main.cpp.o: ../server/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mengfan/project/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hello_test.dir/server/src/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello_test.dir/server/src/main.cpp.o -c /home/mengfan/project/test/server/src/main.cpp
 
-CMakeFiles/hello_test.dir/main/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello_test.dir/main/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mengfan/project/test/main/main.cpp > CMakeFiles/hello_test.dir/main/main.cpp.i
+CMakeFiles/hello_test.dir/server/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello_test.dir/server/src/main.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mengfan/project/test/server/src/main.cpp > CMakeFiles/hello_test.dir/server/src/main.cpp.i
 
-CMakeFiles/hello_test.dir/main/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello_test.dir/main/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mengfan/project/test/main/main.cpp -o CMakeFiles/hello_test.dir/main/main.cpp.s
+CMakeFiles/hello_test.dir/server/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello_test.dir/server/src/main.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mengfan/project/test/server/src/main.cpp -o CMakeFiles/hello_test.dir/server/src/main.cpp.s
 
-CMakeFiles/hello_test.dir/main/main.cpp.o.requires:
+CMakeFiles/hello_test.dir/server/src/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/hello_test.dir/main/main.cpp.o.requires
+.PHONY : CMakeFiles/hello_test.dir/server/src/main.cpp.o.requires
 
-CMakeFiles/hello_test.dir/main/main.cpp.o.provides: CMakeFiles/hello_test.dir/main/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/main/main.cpp.o.provides.build
-.PHONY : CMakeFiles/hello_test.dir/main/main.cpp.o.provides
+CMakeFiles/hello_test.dir/server/src/main.cpp.o.provides: CMakeFiles/hello_test.dir/server/src/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/server/src/main.cpp.o.provides.build
+.PHONY : CMakeFiles/hello_test.dir/server/src/main.cpp.o.provides
 
-CMakeFiles/hello_test.dir/main/main.cpp.o.provides.build: CMakeFiles/hello_test.dir/main/main.cpp.o
+CMakeFiles/hello_test.dir/server/src/main.cpp.o.provides.build: CMakeFiles/hello_test.dir/server/src/main.cpp.o
 
 
-CMakeFiles/hello_test.dir/hello/hello.cpp.o: CMakeFiles/hello_test.dir/flags.make
-CMakeFiles/hello_test.dir/hello/hello.cpp.o: ../hello/hello.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mengfan/project/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hello_test.dir/hello/hello.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello_test.dir/hello/hello.cpp.o -c /home/mengfan/project/test/hello/hello.cpp
+CMakeFiles/hello_test.dir/server/src/network.cpp.o: CMakeFiles/hello_test.dir/flags.make
+CMakeFiles/hello_test.dir/server/src/network.cpp.o: ../server/src/network.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mengfan/project/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hello_test.dir/server/src/network.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello_test.dir/server/src/network.cpp.o -c /home/mengfan/project/test/server/src/network.cpp
 
-CMakeFiles/hello_test.dir/hello/hello.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello_test.dir/hello/hello.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mengfan/project/test/hello/hello.cpp > CMakeFiles/hello_test.dir/hello/hello.cpp.i
+CMakeFiles/hello_test.dir/server/src/network.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello_test.dir/server/src/network.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mengfan/project/test/server/src/network.cpp > CMakeFiles/hello_test.dir/server/src/network.cpp.i
 
-CMakeFiles/hello_test.dir/hello/hello.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello_test.dir/hello/hello.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mengfan/project/test/hello/hello.cpp -o CMakeFiles/hello_test.dir/hello/hello.cpp.s
+CMakeFiles/hello_test.dir/server/src/network.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello_test.dir/server/src/network.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mengfan/project/test/server/src/network.cpp -o CMakeFiles/hello_test.dir/server/src/network.cpp.s
 
-CMakeFiles/hello_test.dir/hello/hello.cpp.o.requires:
+CMakeFiles/hello_test.dir/server/src/network.cpp.o.requires:
 
-.PHONY : CMakeFiles/hello_test.dir/hello/hello.cpp.o.requires
+.PHONY : CMakeFiles/hello_test.dir/server/src/network.cpp.o.requires
 
-CMakeFiles/hello_test.dir/hello/hello.cpp.o.provides: CMakeFiles/hello_test.dir/hello/hello.cpp.o.requires
-	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/hello/hello.cpp.o.provides.build
-.PHONY : CMakeFiles/hello_test.dir/hello/hello.cpp.o.provides
+CMakeFiles/hello_test.dir/server/src/network.cpp.o.provides: CMakeFiles/hello_test.dir/server/src/network.cpp.o.requires
+	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/server/src/network.cpp.o.provides.build
+.PHONY : CMakeFiles/hello_test.dir/server/src/network.cpp.o.provides
 
-CMakeFiles/hello_test.dir/hello/hello.cpp.o.provides.build: CMakeFiles/hello_test.dir/hello/hello.cpp.o
+CMakeFiles/hello_test.dir/server/src/network.cpp.o.provides.build: CMakeFiles/hello_test.dir/server/src/network.cpp.o
 
 
 # Object files for target hello_test
 hello_test_OBJECTS = \
-"CMakeFiles/hello_test.dir/main/main.cpp.o" \
-"CMakeFiles/hello_test.dir/hello/hello.cpp.o"
+"CMakeFiles/hello_test.dir/server/src/main.cpp.o" \
+"CMakeFiles/hello_test.dir/server/src/network.cpp.o"
 
 # External object files for target hello_test
 hello_test_EXTERNAL_OBJECTS =
 
-hello_test: CMakeFiles/hello_test.dir/main/main.cpp.o
-hello_test: CMakeFiles/hello_test.dir/hello/hello.cpp.o
+hello_test: CMakeFiles/hello_test.dir/server/src/main.cpp.o
+hello_test: CMakeFiles/hello_test.dir/server/src/network.cpp.o
 hello_test: CMakeFiles/hello_test.dir/build.make
 hello_test: CMakeFiles/hello_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mengfan/project/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable hello_test"
@@ -125,8 +125,8 @@ CMakeFiles/hello_test.dir/build: hello_test
 
 .PHONY : CMakeFiles/hello_test.dir/build
 
-CMakeFiles/hello_test.dir/requires: CMakeFiles/hello_test.dir/main/main.cpp.o.requires
-CMakeFiles/hello_test.dir/requires: CMakeFiles/hello_test.dir/hello/hello.cpp.o.requires
+CMakeFiles/hello_test.dir/requires: CMakeFiles/hello_test.dir/server/src/main.cpp.o.requires
+CMakeFiles/hello_test.dir/requires: CMakeFiles/hello_test.dir/server/src/network.cpp.o.requires
 
 .PHONY : CMakeFiles/hello_test.dir/requires
 
