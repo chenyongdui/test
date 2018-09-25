@@ -161,9 +161,7 @@ void Service::run_handle()
 			_connect_client.second->Write(tmp);
 
 
-			tmp[0] = 'h';
-			tmp[1] = 'e';
-			tmp[2] = 'h';
+			strcpy(tmp,"安抚染发法国 79878787aa");
 			_connect_client.second->Write(tmp);
 		}
 	}

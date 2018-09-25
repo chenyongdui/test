@@ -172,10 +172,88 @@ void pointer_test()
 	cout<<"(*(*(pc+1)+1)).get():"<<(*(*(pc+1)+1)).get()<<endl;
 }
 
+/*
+wget -c http://ftp.redsleeve.org/pub/steam/glibc-2.15-60.el6.x86_64.rpm
+wget -c http://ftp.redsleeve.org/pub/steam/glibc-common-2.15-60.el6.x86_64.rpm
+wget -c http://ftp.redsleeve.org/pub/steam/glibc-devel-2.15-60.el6.x86_64.rpm
+wget -c http://ftp.redsleeve.org/pub/steam/glibc-headers-2.15-60.el6.x86_64.rpm
+wget -c http://ftp.redsleeve.org/pub/steam/nscd-2.15-60.el6.x86_64.rpm
 
+rpm -Uvh glibc-2.15-60.el6.x86_64.rpm \
+glibc-common-2.15-60.el6.x86_64.rpm \
+glibc-devel-2.15-60.el6.x86_64.rpm \
+glibc-headers-2.15-60.el6.x86_64.rpm \
+nscd-2.15-60.el6.x86_64.rpm
+*/
+
+void sizeof_test()
+{
+	const char* p1 = "hello world!";
+	char p2[4];
+	int p3[5] = {1,2,3,4,5};
+	int * p4 = (int*)(&p3 + 1);
+	
+	cout<<sizeof(p1)<<","<<sizeof(p2)<<","<<sizeof(p3)<<endl;
+	cout<<*(p4-1)<<endl;
+}
+
+
+void union_test()
+{
+	union
+	{
+		char a[4];
+		int i;
+	} p1;
+
+	p1.a[0] = 10;
+	p1.a[1] = 1;
+	p1.a[2] = '\0';
+	p1.a[3] = '\0';
+
+	cout<<p1.i<<endl;
+}
+
+void class_test()
+{
+	class A1
+	{
+		public:
+		A1(){cout<<"A1::A1()"<<endl;}
+		~A1(){cout<<"A1::~A1()"<<endl;}
+	};
+	class A
+	{
+	public:
+		A(){cout<<"A::A()"<<endl;}
+		~A(){cout<<"A::~A()"<<endl;}
+	};
+	class B:public A
+	{
+	public:
+		B(){cout<<"B::B()"<<endl;}
+		virtual ~B(){cout<<"B::~B()"<<endl;}
+	private:
+		A1 a1;
+	};
+	class C:public B
+	{
+	public:
+		C(){cout<<"C::C()"<<endl;}
+		~C(){cout<<"C::~C()"<<endl;}
+	};
+	
+	A a;
+	A* p1 = new B;
+	B* p2 = new C;
+	
+	delete p1;
+	delete p2;
+}
 
 void test()
 { 
+	class_test();
 }
 
 

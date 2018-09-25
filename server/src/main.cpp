@@ -22,12 +22,12 @@ int main(int argc, char* argv[])
     return 0;
 }*/
 
-/*int main()
+int main()
 {
 	Service service(8005);
 	service.run();
 	return 0;
-}*/
+}
 
 
 /*class a {};
@@ -200,7 +200,7 @@ void test()
 }*/
 
 
-int checkCPU()
+/*int checkCPU()
 {
     {
         union w
@@ -211,7 +211,7 @@ int checkCPU()
         c.a = 1;
         return (c.b == 1);
     }
-}
+}*/
 
 /*void test()
 {
@@ -220,11 +220,11 @@ int checkCPU()
 	//checkCPU();
 }*/
 
-int main()
+/*int main()
 {
  test();
  return  0;
-}
+}*/
 
 
 

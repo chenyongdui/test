@@ -45,6 +45,12 @@ void ConnectServer::ReadHeader(const boost::system::error_code & err)
 
 	
 	std::cout<<"ReadHeader len:"<<body_len<<std::endl;
+	
+	if(err)
+	{
+		Stop();
+		return ;
+	}
 
 	memset(m_cReadBuffer, '\0', sizeof(m_cReadBuffer));
 	async_read(m_cSocket, buffer(m_cReadBuffer),transfer_exactly(body_len),std::bind(&ConnectServer::ReadBody, this, _1));
@@ -56,6 +62,12 @@ void ConnectServer::ReadBody(const boost::system::error_code & err)
 
 	Write("hello world");
 	Write("hello 56789");
+	
+	if(err)
+	{
+		Stop();
+		return ;
+	}
 
 	memset(m_cReadBuffer, '\0', sizeof(m_cReadBuffer));
 	async_read(m_cSocket, buffer(m_cReadBuffer),transfer_exactly(MESSAGE_HEADER_LEN),std::bind(&ConnectServer::ReadHeader, this, _1));
@@ -107,6 +119,8 @@ void Client::run_handle()
 	{
 		m_iLastTime = time(nullptr);
 		std::cout<<"now"<< now_time <<std::endl;
+		
+		m_cConnectServer->Write("hello 56789哈哈阿凡达发放安抚");
 	}
 	m_cIoService.post(std::bind(&Client::run_handle,this));
 }

@@ -1,1 +1,2 @@
-/home/mengfan/project/test/bin/hello_test
+/home/mengfan/project/test/bin/server
+/home/mengfan/project/test/bin/client
