@@ -70,30 +70,39 @@ void ConnectClient::ReadBody(const boost::system::error_code & err)
 
 void ConnectClient::Write(char* _body_str)
 {
-	char* _header_buffer = new char[MESSAGE_HEADER_LEN];
-	char* _body_buffer = new char[1024];
+	//char* _header_buffer = new char[MESSAGE_HEADER_LEN+1];
+	//char* _body_buffer = new char[1024];
+	
+	char _header_buffer[1024];
+	//char _body_buffer[1024];
+	
 	sprintf(_header_buffer, "%04d", strlen(_body_str));
-	stpcpy(_body_buffer, _body_str);
+	//stpcpy(_body_buffer, _body_str);
 
 	std::cout<<"m_cWriteHeaderBuffer:"<< _header_buffer <<std::endl;
-	async_write(m_cSocket, buffer(_header_buffer, strlen(_header_buffer)), std::bind(&ConnectClient::WriteHeader, shared_from_this(),_header_buffer, _body_buffer, _1));
-	async_write(m_cSocket, buffer(_body_buffer, strlen(_body_buffer)), std::bind(&ConnectClient::WriteBody, shared_from_this(),_body_buffer, _1));
+	/*async_write(m_cSocket, buffer(_header_buffer, strlen(_header_buffer)), std::bind(&ConnectClient::WriteHeader, shared_from_this(),_header_buffer, _body_buffer, _1));
+	async_write(m_cSocket, buffer(_body_buffer, strlen(_body_buffer)), std::bind(&ConnectClient::WriteBody, shared_from_this(),_body_buffer, _1));*/
+	
+	async_write(m_cSocket, buffer(_header_buffer, strlen(_header_buffer)), std::bind(&ConnectClient::WriteHeader, shared_from_this(),_1));
+	async_write(m_cSocket, buffer(_body_str, strlen(_body_str)), std::bind(&ConnectClient::WriteBody, shared_from_this(), _1));
 }
 
-void ConnectClient::WriteHeader(const char* _header, const char* _body, const boost::system::error_code & err)
+void ConnectClient::WriteHeader(const boost::system::error_code & err)
+//void ConnectClient::WriteHeader(const char* _header, const char* _body, const boost::system::error_code & err)
 {
-	delete[] _header;
+	//delete[] _header;
 	std::cout<<"WriteHeader:"<< err <<std::endl;
-	std::cout<<"m_cWriteBuffer:"<< _body <<std::endl;
+	//std::cout<<"m_cWriteBuffer:"<< _body <<std::endl;
 	if(err)
 	{
 		Stop();
 	}
 }
 
-void ConnectClient::WriteBody(const char* _body, const boost::system::error_code & err)
+void ConnectClient::WriteBody(const boost::system::error_code & err)
+//void ConnectClient::WriteBody(const char* _body, const boost::system::error_code & err)
 {
-	delete[] _body;
+	//delete[] _body;
 	std::cout<<"WriteBody:"<< err <<std::endl;
 	if(err)
 	{

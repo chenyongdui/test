@@ -13,8 +13,12 @@ public:
 
 private:
 	void OnConnect(const boost::system::error_code& err);
-	void WriteHeader(const char* _header, const char* _body, const boost::system::error_code & err);
-	void WriteBody(const char* _body, const boost::system::error_code & err);
+	//void WriteHeader(const char* _header, const char* _body, const boost::system::error_code & err);
+	//void WriteBody(const char* _body, const boost::system::error_code & err);
+	
+	void WriteHeader(const boost::system::error_code & err);
+	void WriteBody(const boost::system::error_code & err);
+	
 	void ReadHeader(const boost::system::error_code & err);
 	void ReadBody(const boost::system::error_code & err);
 
