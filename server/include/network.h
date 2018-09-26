@@ -1,5 +1,7 @@
 #include<boost/asio.hpp>
 #include <boost/enable_shared_from_this.hpp>
+#include"NetHandle.h"
+
 using namespace boost::asio;
 using namespace std::placeholders;
 
@@ -11,20 +13,32 @@ public:
 	void Stop();
 	int GetConnectClientId();
 	ip::tcp::socket & GetSocket();
+
+	template< typename MsgProcHandle >
+	void RegisterMsgProcHandle(MsgProcHandle _MsgProcHandle);
 	void Write(char* _body_str);
 
 private:
-	void ReadHeader(const boost::system::error_code & err);
+	/*void ReadHeader(const boost::system::error_code & err);
 	void ReadBody(const boost::system::error_code & err);
 	//void WriteHeader(const char* _header,const  char* _body, const boost::system::error_code & err);
 	//void WriteBody(const char* _body,const boost::system::error_code & err);
 	void WriteHeader(const boost::system::error_code & err);
-	void WriteBody(const boost::system::error_code & err);
+	void WriteBody(const boost::system::error_code & err);*/
+	
+	void OnErrorHandle(const boost::system::error_code & err);
 
 	int m_iConnectClientId;
 	ip::tcp::socket m_cSocket;
-	char m_cReadBuffer[1024];
+	//char m_cReadBuffer[1024];
+	CNetHandle m_cNetHandle; 
 };
+
+template< typename MsgProcHandle >
+void ConnectClient::RegisterMsgProcHandle(MsgProcHandle _MsgProcHandle)
+{
+	m_cNetHandle.RegisterMsgProcHandle(_MsgProcHandle);
+}
 
 typedef boost::shared_ptr<ConnectClient> ConnectClientPtr;
 
@@ -40,11 +54,13 @@ private:
 	static std::map<int, ConnectClientPtr> m_cConnectClientMap;
 };
 
-class Service
+class Service : public boost::enable_shared_from_this<ConnectClient>
 {
 public:
 	Service(int port);
 	void run();
+	
+	void NetMsgHandle(const char* strMsg);
 
 private:
 	io_service m_cIoService;

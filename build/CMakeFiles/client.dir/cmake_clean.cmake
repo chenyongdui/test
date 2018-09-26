@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/client.dir/base/NetHandle.cpp.o"
   "CMakeFiles/client.dir/base/study.cpp.o"
   "CMakeFiles/client.dir/client/src/main.cpp.o"
   "CMakeFiles/client.dir/client/src/network.cpp.o"

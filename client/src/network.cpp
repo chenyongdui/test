@@ -1,14 +1,15 @@
 #include"../base/common.h"
 #include"../include/network.h"
 
+ConnectServer::ConnectServer(io_service& _io_service):m_cSocket(_io_service)
+{
+	m_cNetHandle.RegisterErrorInfoHandle(std::bind(&ConnectServer::OnErrorHandle, this, _1));
+}
+
 void ConnectServer::Connect(const char * ip, int port)
 {
 	m_cEndPoint = ip::tcp::endpoint(ip::address_v4::from_string(ip), port);
 	m_cSocket.async_connect(m_cEndPoint, std::bind(&ConnectServer::OnConnect, this, _1));
-}
-
-ConnectServer::ConnectServer(io_service& _io_service):m_cSocket(_io_service)
-{
 }
 
 void ConnectServer::Stop()
@@ -23,15 +24,25 @@ void ConnectServer::OnConnect(const boost::system::error_code& err)
 		std::cout<<err <<std::endl;
 		return;
 	}
-	Write("hello world");
+	m_cNetHandle.SetSocket(&m_cSocket);
+	m_cNetHandle.DoRead();
+	/*Write("hello world");
 
 	Write("hello 12345");
 
 	memset(m_cReadBuffer, '\0', sizeof(m_cReadBuffer));
-	async_read(m_cSocket, buffer(m_cReadBuffer),transfer_exactly(MESSAGE_HEADER_LEN),std::bind(&ConnectServer::ReadHeader, this, _1));
+	async_read(m_cSocket, buffer(m_cReadBuffer),transfer_exactly(MESSAGE_HEADER_LEN),std::bind(&ConnectServer::ReadHeader, this, _1));*/
 }
 
-void ConnectServer::ReadHeader(const boost::system::error_code & err)
+void ConnectServer::OnErrorHandle(const boost::system::error_code & err)
+{
+	if(err)
+	{
+		Stop();
+	}
+}
+
+/*void ConnectServer::ReadHeader(const boost::system::error_code & err)
 {
 	std::cout<< strlen(m_cReadBuffer) << ":" <<m_cReadBuffer<<std::endl;
 
@@ -71,16 +82,16 @@ void ConnectServer::ReadBody(const boost::system::error_code & err)
 
 	memset(m_cReadBuffer, '\0', sizeof(m_cReadBuffer));
 	async_read(m_cSocket, buffer(m_cReadBuffer),transfer_exactly(MESSAGE_HEADER_LEN),std::bind(&ConnectServer::ReadHeader, this, _1));
-}
+}*/
 
 
 void ConnectServer::Write(char* _body_str)
 {
 	//char* _header_buffer = new char[1024];
 	//char* _body_buffer = new char[1024];
-	
-	char _header_buffer[1024];
-	sprintf(_header_buffer, "%04d", strlen(_body_str));
+
+	m_cNetHandle.DoWrite(_body_str);
+	//sprintf(_header_buffer, "%04d", strlen(_body_str));
 	//stpcpy(_body_buffer, _body_str);
 
 
@@ -88,12 +99,12 @@ void ConnectServer::Write(char* _body_str)
 	async_write(m_cSocket, buffer(_body_buffer, strlen(_body_buffer)), std::bind(&ConnectServer::WriteBody, this,_body_buffer, _1));*/
 	
 	
-	async_write(m_cSocket, buffer(_header_buffer, strlen(_header_buffer)), std::bind(&ConnectServer::WriteHeader, this,_1));
-	async_write(m_cSocket, buffer(_body_str, strlen(_body_str)), std::bind(&ConnectServer::WriteBody, this,_1));
+	/*async_write(m_cSocket, buffer(_header_buffer, strlen(_header_buffer)), std::bind(&ConnectServer::WriteHeader, this,_1));
+	async_write(m_cSocket, buffer(_body_str, strlen(_body_str)), std::bind(&ConnectServer::WriteBody, this,_1));*/
 }
 
 //void ConnectServer::WriteHeader(const char* _header, const char* _body, const boost::system::error_code & err)
-void ConnectServer::WriteHeader(const boost::system::error_code & err)
+/*void ConnectServer::WriteHeader(const boost::system::error_code & err)
 {
 	//delete[] _header;
 	std::cout<<"WriteHeader:"<< err <<std::endl;
@@ -101,10 +112,10 @@ void ConnectServer::WriteHeader(const boost::system::error_code & err)
 	{
 		Stop();
 	}
-}
+}*/
 
 //void ConnectServer::WriteBody(const char* _body, const boost::system::error_code & err)
-void ConnectServer::WriteBody(const boost::system::error_code & err)
+/*void ConnectServer::WriteBody(const boost::system::error_code & err)
 {
 	//delete[] _body;
 	std::cout<<"WriteBody:"<< err <<std::endl;
@@ -112,12 +123,19 @@ void ConnectServer::WriteBody(const boost::system::error_code & err)
 	{
 		Stop();
 	}
-}
+}*/
 
 Client::Client(const char* ip, int port)
 {
 	m_cConnectServer = std::shared_ptr<ConnectServer>(new ConnectServer(m_cIoService));
+	m_cConnectServer->RegisterMsgProcHandle(std::bind(&Client::NetMsgHandle, this, _1));
 	m_cConnectServer->Connect(ip, port);
+	
+}
+
+void Client::NetMsgHandle(const char* strMsg)
+{
+	
 }
 
 void Client::run_handle()
@@ -129,6 +147,8 @@ void Client::run_handle()
 		std::cout<<"now"<< now_time <<std::endl;
 		
 		m_cConnectServer->Write("hello 56789哈哈阿凡达发放安抚");
+		
+		sleep(2);
 	}
 	m_cIoService.post(std::bind(&Client::run_handle,this));
 }

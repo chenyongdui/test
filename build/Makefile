@@ -180,6 +180,36 @@ server/fast:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
 .PHONY : server/fast
 
+base/NetHandle.o: base/NetHandle.cpp.o
+
+.PHONY : base/NetHandle.o
+
+# target to build an object file
+base/NetHandle.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/base/NetHandle.cpp.o
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/NetHandle.cpp.o
+.PHONY : base/NetHandle.cpp.o
+
+base/NetHandle.i: base/NetHandle.cpp.i
+
+.PHONY : base/NetHandle.i
+
+# target to preprocess a source file
+base/NetHandle.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/base/NetHandle.cpp.i
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/NetHandle.cpp.i
+.PHONY : base/NetHandle.cpp.i
+
+base/NetHandle.s: base/NetHandle.cpp.s
+
+.PHONY : base/NetHandle.s
+
+# target to generate assembly for a file
+base/NetHandle.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/base/NetHandle.cpp.s
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/NetHandle.cpp.s
+.PHONY : base/NetHandle.cpp.s
+
 base/study.o: base/study.cpp.o
 
 .PHONY : base/study.o
@@ -332,6 +362,9 @@ help:
 	@echo "... install/strip"
 	@echo "... client"
 	@echo "... server"
+	@echo "... base/NetHandle.o"
+	@echo "... base/NetHandle.i"
+	@echo "... base/NetHandle.s"
 	@echo "... base/study.o"
 	@echo "... base/study.i"
 	@echo "... base/study.s"
