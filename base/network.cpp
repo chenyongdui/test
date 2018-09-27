@@ -36,7 +36,7 @@ void ConnectServer::OnErrorHandle(const boost::system::error_code & err)
 	}
 }
 
-void ConnectServer::Write(char* _body_str)
+void ConnectServer::Write(const char* _body_str)
 {
 	m_cNetHandle.DoWrite(_body_str);
 }
@@ -70,7 +70,7 @@ void ConnectClient::Stop()
 	ConnectClientMgr::RemoveConnectClient(m_iConnectClientId);
 }
 
-void ConnectClient::Write(char* _body_str)
+void ConnectClient::Write(const char* _body_str)
 {
 	m_cNetHandle.DoWrite(_body_str);
 }

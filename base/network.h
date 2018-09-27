@@ -9,7 +9,7 @@ public:
 
 	template< typename MsgProcHandle >
 	void RegisterMsgProcHandle(MsgProcHandle _MsgProcHandle);
-	void Write(char* _body_str);
+	void Write(const char* _body_str);
 
 private:
 	void OnConnect(const boost::system::error_code& err);
@@ -38,7 +38,7 @@ public:
 
 	template< typename MsgProcHandle >
 	void RegisterMsgProcHandle(MsgProcHandle _MsgProcHandle);
-	void Write(char* _body_str);
+	void Write(const char* _body_str);
 
 private:
 	void OnErrorHandle(const boost::system::error_code & err);

@@ -1,10 +1,10 @@
 #include"common.h"
 #include"network.h"
 
-class Client: public boost::enable_shared_from_this<ConnectServer> 
+class CClientBase: public boost::enable_shared_from_this<CClientBase> 
 {
 public:
-	Client(const char* ip, int port);
+	CClientBase(const char* ip, int port);
 	void run();
 
 	void NetMsgHandle(const char* strMsg);

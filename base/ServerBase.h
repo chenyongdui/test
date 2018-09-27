@@ -1,10 +1,10 @@
 #include"common.h"
 #include"network.h"
 
-class Service : public boost::enable_shared_from_this<ConnectClient>
+class CServiceBase : public boost::enable_shared_from_this<CServiceBase>
 {
 public:
-	Service(int port);
+	CServiceBase(int port);
 	void run();
 	
 	void NetMsgHandle(const char* strMsg);

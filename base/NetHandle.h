@@ -19,12 +19,9 @@ public:
 	template<typename ErrorInfoHandle >
 	void RegisterErrorInfoHandle(ErrorInfoHandle _ErrorInfoHandle);
 	
-	void DoWrite(const char* _body_str);
 	void DoRead();
-	
-	//void WriteHeader(const char* _header, const char* _body, const boost::system::error_code & err);
-	//void WriteBody(const char* _body, const boost::system::error_code & err);
-	
+	void DoWrite(const char* _body_str);
+
 private:
 	void WriteHeader(const boost::system::error_code & err);
 	void WriteBody(const boost::system::error_code & err);
@@ -34,6 +31,10 @@ private:
 
 	ip::tcp::socket* m_pSocket;
 	char m_cReadBuffer[1024];
+	struct SNetMsgHeader
+	{
+		int m_iBodyLen;
+	};
 
 	std::function<void(const boost::system::error_code &)> m_fErrorInfoHandle;
 	std::function<void(const char*)> m_fMsgProcHandle;

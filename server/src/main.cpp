@@ -1,7 +1,14 @@
 #include<iostream>
+#include"../../base/ServerBase.h"
 using namespace std;
 
-#include"../../base/ServerBase.h"
+int main()
+{
+	CServiceBase service(8005);
+	service.run();
+	return 0;
+}
+
 
 /*boost::asio::io_service ios;
 void foo()
@@ -20,13 +27,6 @@ int main(int argc, char* argv[])
     ios.run();
     return 0;
 }*/
-
-int main()
-{
-	Service service(8005);
-	service.run();
-	return 0;
-}
 
 
 /*class a {};
@@ -219,11 +219,58 @@ void test()
 	//checkCPU();
 }*/
 
-/*int main()
+/*struct A
 {
- test();
+	int a;
+	char b;
+	float c;
+	double d;
+};
+
+void gtest()
+{
+	A pp = {1, 'y', 1.23, 1.4567893214};
+	char pstr[30];
+	A pb;
+	
+	cout<<sizeof(A)<<endl;
+	
+	
+	memcpy(pstr, &pp, sizeof(A));
+	
+	cout<<pstr<<endl;
+	
+	
+	cout<<pb.a<<" "<<pb.b<<" "<<pb.c<<" "<<pb.d<<endl;
+	memcpy(&pb, pstr, sizeof(A));
+	cout<<pb.a<<" "<<pb.b<<" "<<pb.c<<" "<<pb.d<<endl;
+	
+	
+}
+
+int main()
+{
+ gtest();
  return  0;
 }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
