@@ -6,19 +6,15 @@
 
 #IncludeRegexTransform: 
 
-../base/NetHandle.h
-boost/asio.hpp
--
-boost/enable_shared_from_this.hpp
--
-../base/common.h
-../base/common.h
+/home/mengfan/project/test/base/ClientBase.cpp
+ClientBase.h
+/home/mengfan/project/test/base/ClientBase.h
 
-../base/common.h
-iostream
--
-cstring
--
+/home/mengfan/project/test/base/ClientBase.h
+common.h
+/home/mengfan/project/test/base/common.h
+network.h
+/home/mengfan/project/test/base/network.h
 
 /home/mengfan/project/test/base/NetHandle.cpp
 NetHandle.h
@@ -29,14 +25,34 @@ boost/asio.hpp
 -
 boost/enable_shared_from_this.hpp
 -
-../base/common.h
+common.h
 /home/mengfan/project/test/base/common.h
+
+/home/mengfan/project/test/base/ServerBase.cpp
+ServerBase.h
+/home/mengfan/project/test/base/ServerBase.h
+
+/home/mengfan/project/test/base/ServerBase.h
+common.h
+/home/mengfan/project/test/base/common.h
+network.h
+/home/mengfan/project/test/base/network.h
 
 /home/mengfan/project/test/base/common.h
 iostream
 -
 cstring
 -
+
+/home/mengfan/project/test/base/network.cpp
+common.h
+/home/mengfan/project/test/base/common.h
+network.h
+/home/mengfan/project/test/base/network.h
+
+/home/mengfan/project/test/base/network.h
+NetHandle.h
+/home/mengfan/project/test/base/NetHandle.h
 
 /home/mengfan/project/test/base/study.cpp
 ../base/common.h
@@ -48,21 +64,7 @@ cstring
 iostream
 -
 
-/home/mengfan/project/test/client/include/network.h
-boost/asio.hpp
--
-boost/enable_shared_from_this.hpp
--
-NetHandle.h
-/home/mengfan/project/test/client/include/NetHandle.h
-
 /home/mengfan/project/test/client/src/main.cpp
-../include/network.h
-/home/mengfan/project/test/client/include/network.h
-
-/home/mengfan/project/test/client/src/network.cpp
-../base/common.h
-/home/mengfan/project/test/client/base/common.h
-../include/network.h
-/home/mengfan/project/test/client/include/network.h
+../../base/ClientBase.h
+/home/mengfan/project/test/base/ClientBase.h
 

@@ -1,6 +1,5 @@
 #include"NetHandle.h"
 
-
 CNetHandle::CNetHandle()
 {
 	
@@ -44,10 +43,6 @@ void CNetHandle::ReadHeader(const boost::system::error_code & err)
 {
 	std::cout<< strlen(m_cReadBuffer) << ":" <<m_cReadBuffer<<std::endl;
 
-	std::cout<<"ReadHeader:"<<m_cReadBuffer<<std::endl;
-	std::cout<<"error_code:"<<err<<std::endl;
-
-
 	int body_len;
 
 	body_len = atoi(m_cReadBuffer);
@@ -68,8 +63,6 @@ void CNetHandle::ReadHeader(const boost::system::error_code & err)
 
 void CNetHandle::ReadBody(const boost::system::error_code & err)
 {
-	std::cout<<"ReadBody body:"<<m_cReadBuffer<<std::endl;
-
 	m_fMsgProcHandle(m_cReadBuffer);
 	m_fErrorInfoHandle(err);
 	if(err)
@@ -77,9 +70,6 @@ void CNetHandle::ReadBody(const boost::system::error_code & err)
 		return ;
 	}
 
-	//Write("hello world");
-	//Write("hello 56789");
-	
 	memset(m_cReadBuffer, '\0', sizeof(m_cReadBuffer));
 	async_read(*m_pSocket, buffer(m_cReadBuffer),transfer_exactly(MESSAGE_HEADER_LEN),std::bind(&CNetHandle::ReadHeader, this, _1));
 }
@@ -87,8 +77,6 @@ void CNetHandle::ReadBody(const boost::system::error_code & err)
 void CNetHandle::WriteHeader(const boost::system::error_code & err)
 {
 	//delete[] _header;
-	std::cout<<"WriteHeader:"<< err <<std::endl;
-	
 	m_fErrorInfoHandle(err);
 	if(err)
 	{
@@ -99,8 +87,6 @@ void CNetHandle::WriteHeader(const boost::system::error_code & err)
 void CNetHandle::WriteBody(const boost::system::error_code & err)
 {
 	//delete[] _body;
-	std::cout<<"WriteBody:"<< err <<std::endl;
-
 	m_fErrorInfoHandle(err);
 	if(err)
 	{

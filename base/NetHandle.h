@@ -3,7 +3,7 @@
 #include <boost/enable_shared_from_this.hpp>
 using namespace boost::asio;
 using namespace std::placeholders;
-#include"../base/common.h"
+#include"common.h"
 
 class CNetHandle: public boost::enable_shared_from_this<CNetHandle> 
 {

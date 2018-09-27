@@ -1,8 +1,7 @@
 #include<iostream>
 using namespace std;
 
-#include"../base/study.h"
-#include"../include/network.h"
+#include"../../base/ServerBase.h"
 
 /*boost::asio::io_service ios;
 void foo()

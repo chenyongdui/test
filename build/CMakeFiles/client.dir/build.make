@@ -81,9 +81,33 @@ CMakeFiles/client.dir/base/NetHandle.cpp.o.provides: CMakeFiles/client.dir/base/
 CMakeFiles/client.dir/base/NetHandle.cpp.o.provides.build: CMakeFiles/client.dir/base/NetHandle.cpp.o
 
 
+CMakeFiles/client.dir/base/ClientBase.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/base/ClientBase.cpp.o: ../base/ClientBase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mengfan/project/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/client.dir/base/ClientBase.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/base/ClientBase.cpp.o -c /home/mengfan/project/test/base/ClientBase.cpp
+
+CMakeFiles/client.dir/base/ClientBase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/base/ClientBase.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mengfan/project/test/base/ClientBase.cpp > CMakeFiles/client.dir/base/ClientBase.cpp.i
+
+CMakeFiles/client.dir/base/ClientBase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/base/ClientBase.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mengfan/project/test/base/ClientBase.cpp -o CMakeFiles/client.dir/base/ClientBase.cpp.s
+
+CMakeFiles/client.dir/base/ClientBase.cpp.o.requires:
+
+.PHONY : CMakeFiles/client.dir/base/ClientBase.cpp.o.requires
+
+CMakeFiles/client.dir/base/ClientBase.cpp.o.provides: CMakeFiles/client.dir/base/ClientBase.cpp.o.requires
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/base/ClientBase.cpp.o.provides.build
+.PHONY : CMakeFiles/client.dir/base/ClientBase.cpp.o.provides
+
+CMakeFiles/client.dir/base/ClientBase.cpp.o.provides.build: CMakeFiles/client.dir/base/ClientBase.cpp.o
+
+
 CMakeFiles/client.dir/base/study.cpp.o: CMakeFiles/client.dir/flags.make
 CMakeFiles/client.dir/base/study.cpp.o: ../base/study.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mengfan/project/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/client.dir/base/study.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mengfan/project/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/client.dir/base/study.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/base/study.cpp.o -c /home/mengfan/project/test/base/study.cpp
 
 CMakeFiles/client.dir/base/study.cpp.i: cmake_force
@@ -105,9 +129,57 @@ CMakeFiles/client.dir/base/study.cpp.o.provides: CMakeFiles/client.dir/base/stud
 CMakeFiles/client.dir/base/study.cpp.o.provides.build: CMakeFiles/client.dir/base/study.cpp.o
 
 
+CMakeFiles/client.dir/base/network.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/base/network.cpp.o: ../base/network.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mengfan/project/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/client.dir/base/network.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/base/network.cpp.o -c /home/mengfan/project/test/base/network.cpp
+
+CMakeFiles/client.dir/base/network.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/base/network.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mengfan/project/test/base/network.cpp > CMakeFiles/client.dir/base/network.cpp.i
+
+CMakeFiles/client.dir/base/network.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/base/network.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mengfan/project/test/base/network.cpp -o CMakeFiles/client.dir/base/network.cpp.s
+
+CMakeFiles/client.dir/base/network.cpp.o.requires:
+
+.PHONY : CMakeFiles/client.dir/base/network.cpp.o.requires
+
+CMakeFiles/client.dir/base/network.cpp.o.provides: CMakeFiles/client.dir/base/network.cpp.o.requires
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/base/network.cpp.o.provides.build
+.PHONY : CMakeFiles/client.dir/base/network.cpp.o.provides
+
+CMakeFiles/client.dir/base/network.cpp.o.provides.build: CMakeFiles/client.dir/base/network.cpp.o
+
+
+CMakeFiles/client.dir/base/ServerBase.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/base/ServerBase.cpp.o: ../base/ServerBase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mengfan/project/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/client.dir/base/ServerBase.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/base/ServerBase.cpp.o -c /home/mengfan/project/test/base/ServerBase.cpp
+
+CMakeFiles/client.dir/base/ServerBase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/base/ServerBase.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mengfan/project/test/base/ServerBase.cpp > CMakeFiles/client.dir/base/ServerBase.cpp.i
+
+CMakeFiles/client.dir/base/ServerBase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/base/ServerBase.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mengfan/project/test/base/ServerBase.cpp -o CMakeFiles/client.dir/base/ServerBase.cpp.s
+
+CMakeFiles/client.dir/base/ServerBase.cpp.o.requires:
+
+.PHONY : CMakeFiles/client.dir/base/ServerBase.cpp.o.requires
+
+CMakeFiles/client.dir/base/ServerBase.cpp.o.provides: CMakeFiles/client.dir/base/ServerBase.cpp.o.requires
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/base/ServerBase.cpp.o.provides.build
+.PHONY : CMakeFiles/client.dir/base/ServerBase.cpp.o.provides
+
+CMakeFiles/client.dir/base/ServerBase.cpp.o.provides.build: CMakeFiles/client.dir/base/ServerBase.cpp.o
+
+
 CMakeFiles/client.dir/client/src/main.cpp.o: CMakeFiles/client.dir/flags.make
 CMakeFiles/client.dir/client/src/main.cpp.o: ../client/src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mengfan/project/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/client.dir/client/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mengfan/project/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/client.dir/client/src/main.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/client/src/main.cpp.o -c /home/mengfan/project/test/client/src/main.cpp
 
 CMakeFiles/client.dir/client/src/main.cpp.i: cmake_force
@@ -129,47 +201,27 @@ CMakeFiles/client.dir/client/src/main.cpp.o.provides: CMakeFiles/client.dir/clie
 CMakeFiles/client.dir/client/src/main.cpp.o.provides.build: CMakeFiles/client.dir/client/src/main.cpp.o
 
 
-CMakeFiles/client.dir/client/src/network.cpp.o: CMakeFiles/client.dir/flags.make
-CMakeFiles/client.dir/client/src/network.cpp.o: ../client/src/network.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mengfan/project/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/client.dir/client/src/network.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/client/src/network.cpp.o -c /home/mengfan/project/test/client/src/network.cpp
-
-CMakeFiles/client.dir/client/src/network.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/client/src/network.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mengfan/project/test/client/src/network.cpp > CMakeFiles/client.dir/client/src/network.cpp.i
-
-CMakeFiles/client.dir/client/src/network.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/client/src/network.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mengfan/project/test/client/src/network.cpp -o CMakeFiles/client.dir/client/src/network.cpp.s
-
-CMakeFiles/client.dir/client/src/network.cpp.o.requires:
-
-.PHONY : CMakeFiles/client.dir/client/src/network.cpp.o.requires
-
-CMakeFiles/client.dir/client/src/network.cpp.o.provides: CMakeFiles/client.dir/client/src/network.cpp.o.requires
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/src/network.cpp.o.provides.build
-.PHONY : CMakeFiles/client.dir/client/src/network.cpp.o.provides
-
-CMakeFiles/client.dir/client/src/network.cpp.o.provides.build: CMakeFiles/client.dir/client/src/network.cpp.o
-
-
 # Object files for target client
 client_OBJECTS = \
 "CMakeFiles/client.dir/base/NetHandle.cpp.o" \
+"CMakeFiles/client.dir/base/ClientBase.cpp.o" \
 "CMakeFiles/client.dir/base/study.cpp.o" \
-"CMakeFiles/client.dir/client/src/main.cpp.o" \
-"CMakeFiles/client.dir/client/src/network.cpp.o"
+"CMakeFiles/client.dir/base/network.cpp.o" \
+"CMakeFiles/client.dir/base/ServerBase.cpp.o" \
+"CMakeFiles/client.dir/client/src/main.cpp.o"
 
 # External object files for target client
 client_EXTERNAL_OBJECTS =
 
 client: CMakeFiles/client.dir/base/NetHandle.cpp.o
+client: CMakeFiles/client.dir/base/ClientBase.cpp.o
 client: CMakeFiles/client.dir/base/study.cpp.o
+client: CMakeFiles/client.dir/base/network.cpp.o
+client: CMakeFiles/client.dir/base/ServerBase.cpp.o
 client: CMakeFiles/client.dir/client/src/main.cpp.o
-client: CMakeFiles/client.dir/client/src/network.cpp.o
 client: CMakeFiles/client.dir/build.make
 client: CMakeFiles/client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mengfan/project/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mengfan/project/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable client"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -178,9 +230,11 @@ CMakeFiles/client.dir/build: client
 .PHONY : CMakeFiles/client.dir/build
 
 CMakeFiles/client.dir/requires: CMakeFiles/client.dir/base/NetHandle.cpp.o.requires
+CMakeFiles/client.dir/requires: CMakeFiles/client.dir/base/ClientBase.cpp.o.requires
 CMakeFiles/client.dir/requires: CMakeFiles/client.dir/base/study.cpp.o.requires
+CMakeFiles/client.dir/requires: CMakeFiles/client.dir/base/network.cpp.o.requires
+CMakeFiles/client.dir/requires: CMakeFiles/client.dir/base/ServerBase.cpp.o.requires
 CMakeFiles/client.dir/requires: CMakeFiles/client.dir/client/src/main.cpp.o.requires
-CMakeFiles/client.dir/requires: CMakeFiles/client.dir/client/src/network.cpp.o.requires
 
 .PHONY : CMakeFiles/client.dir/requires
 

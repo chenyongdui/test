@@ -1,4 +1,4 @@
-#include"../include/network.h"
+#include"../../base/ClientBase.h"
 
 int main()
 {

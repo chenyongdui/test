@@ -4,10 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/mengfan/project/test/base/ClientBase.cpp" "/home/mengfan/project/test/build/CMakeFiles/client.dir/base/ClientBase.cpp.o"
   "/home/mengfan/project/test/base/NetHandle.cpp" "/home/mengfan/project/test/build/CMakeFiles/client.dir/base/NetHandle.cpp.o"
+  "/home/mengfan/project/test/base/ServerBase.cpp" "/home/mengfan/project/test/build/CMakeFiles/client.dir/base/ServerBase.cpp.o"
+  "/home/mengfan/project/test/base/network.cpp" "/home/mengfan/project/test/build/CMakeFiles/client.dir/base/network.cpp.o"
   "/home/mengfan/project/test/base/study.cpp" "/home/mengfan/project/test/build/CMakeFiles/client.dir/base/study.cpp.o"
   "/home/mengfan/project/test/client/src/main.cpp" "/home/mengfan/project/test/build/CMakeFiles/client.dir/client/src/main.cpp.o"
-  "/home/mengfan/project/test/client/src/network.cpp" "/home/mengfan/project/test/build/CMakeFiles/client.dir/client/src/network.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

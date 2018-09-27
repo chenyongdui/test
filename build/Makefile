@@ -180,6 +180,36 @@ server/fast:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
 .PHONY : server/fast
 
+base/ClientBase.o: base/ClientBase.cpp.o
+
+.PHONY : base/ClientBase.o
+
+# target to build an object file
+base/ClientBase.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/base/ClientBase.cpp.o
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/ClientBase.cpp.o
+.PHONY : base/ClientBase.cpp.o
+
+base/ClientBase.i: base/ClientBase.cpp.i
+
+.PHONY : base/ClientBase.i
+
+# target to preprocess a source file
+base/ClientBase.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/base/ClientBase.cpp.i
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/ClientBase.cpp.i
+.PHONY : base/ClientBase.cpp.i
+
+base/ClientBase.s: base/ClientBase.cpp.s
+
+.PHONY : base/ClientBase.s
+
+# target to generate assembly for a file
+base/ClientBase.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/base/ClientBase.cpp.s
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/ClientBase.cpp.s
+.PHONY : base/ClientBase.cpp.s
+
 base/NetHandle.o: base/NetHandle.cpp.o
 
 .PHONY : base/NetHandle.o
@@ -209,6 +239,66 @@ base/NetHandle.cpp.s:
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/base/NetHandle.cpp.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/NetHandle.cpp.s
 .PHONY : base/NetHandle.cpp.s
+
+base/ServerBase.o: base/ServerBase.cpp.o
+
+.PHONY : base/ServerBase.o
+
+# target to build an object file
+base/ServerBase.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/base/ServerBase.cpp.o
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/ServerBase.cpp.o
+.PHONY : base/ServerBase.cpp.o
+
+base/ServerBase.i: base/ServerBase.cpp.i
+
+.PHONY : base/ServerBase.i
+
+# target to preprocess a source file
+base/ServerBase.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/base/ServerBase.cpp.i
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/ServerBase.cpp.i
+.PHONY : base/ServerBase.cpp.i
+
+base/ServerBase.s: base/ServerBase.cpp.s
+
+.PHONY : base/ServerBase.s
+
+# target to generate assembly for a file
+base/ServerBase.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/base/ServerBase.cpp.s
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/ServerBase.cpp.s
+.PHONY : base/ServerBase.cpp.s
+
+base/network.o: base/network.cpp.o
+
+.PHONY : base/network.o
+
+# target to build an object file
+base/network.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/base/network.cpp.o
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/network.cpp.o
+.PHONY : base/network.cpp.o
+
+base/network.i: base/network.cpp.i
+
+.PHONY : base/network.i
+
+# target to preprocess a source file
+base/network.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/base/network.cpp.i
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/network.cpp.i
+.PHONY : base/network.cpp.i
+
+base/network.s: base/network.cpp.s
+
+.PHONY : base/network.s
+
+# target to generate assembly for a file
+base/network.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/base/network.cpp.s
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/network.cpp.s
+.PHONY : base/network.cpp.s
 
 base/study.o: base/study.cpp.o
 
@@ -267,33 +357,6 @@ client/src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/src/main.cpp.s
 .PHONY : client/src/main.cpp.s
 
-client/src/network.o: client/src/network.cpp.o
-
-.PHONY : client/src/network.o
-
-# target to build an object file
-client/src/network.cpp.o:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/src/network.cpp.o
-.PHONY : client/src/network.cpp.o
-
-client/src/network.i: client/src/network.cpp.i
-
-.PHONY : client/src/network.i
-
-# target to preprocess a source file
-client/src/network.cpp.i:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/src/network.cpp.i
-.PHONY : client/src/network.cpp.i
-
-client/src/network.s: client/src/network.cpp.s
-
-.PHONY : client/src/network.s
-
-# target to generate assembly for a file
-client/src/network.cpp.s:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/src/network.cpp.s
-.PHONY : client/src/network.cpp.s
-
 server/src/main.o: server/src/main.cpp.o
 
 .PHONY : server/src/main.o
@@ -321,33 +384,6 @@ server/src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/src/main.cpp.s
 .PHONY : server/src/main.cpp.s
 
-server/src/network.o: server/src/network.cpp.o
-
-.PHONY : server/src/network.o
-
-# target to build an object file
-server/src/network.cpp.o:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/src/network.cpp.o
-.PHONY : server/src/network.cpp.o
-
-server/src/network.i: server/src/network.cpp.i
-
-.PHONY : server/src/network.i
-
-# target to preprocess a source file
-server/src/network.cpp.i:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/src/network.cpp.i
-.PHONY : server/src/network.cpp.i
-
-server/src/network.s: server/src/network.cpp.s
-
-.PHONY : server/src/network.s
-
-# target to generate assembly for a file
-server/src/network.cpp.s:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/src/network.cpp.s
-.PHONY : server/src/network.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -362,24 +398,27 @@ help:
 	@echo "... install/strip"
 	@echo "... client"
 	@echo "... server"
+	@echo "... base/ClientBase.o"
+	@echo "... base/ClientBase.i"
+	@echo "... base/ClientBase.s"
 	@echo "... base/NetHandle.o"
 	@echo "... base/NetHandle.i"
 	@echo "... base/NetHandle.s"
+	@echo "... base/ServerBase.o"
+	@echo "... base/ServerBase.i"
+	@echo "... base/ServerBase.s"
+	@echo "... base/network.o"
+	@echo "... base/network.i"
+	@echo "... base/network.s"
 	@echo "... base/study.o"
 	@echo "... base/study.i"
 	@echo "... base/study.s"
 	@echo "... client/src/main.o"
 	@echo "... client/src/main.i"
 	@echo "... client/src/main.s"
-	@echo "... client/src/network.o"
-	@echo "... client/src/network.i"
-	@echo "... client/src/network.s"
 	@echo "... server/src/main.o"
 	@echo "... server/src/main.i"
 	@echo "... server/src/main.s"
-	@echo "... server/src/network.o"
-	@echo "... server/src/network.i"
-	@echo "... server/src/network.s"
 .PHONY : help
 
 

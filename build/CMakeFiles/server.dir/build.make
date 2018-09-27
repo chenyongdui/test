@@ -81,9 +81,33 @@ CMakeFiles/server.dir/base/NetHandle.cpp.o.provides: CMakeFiles/server.dir/base/
 CMakeFiles/server.dir/base/NetHandle.cpp.o.provides.build: CMakeFiles/server.dir/base/NetHandle.cpp.o
 
 
+CMakeFiles/server.dir/base/ClientBase.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/base/ClientBase.cpp.o: ../base/ClientBase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mengfan/project/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/base/ClientBase.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/base/ClientBase.cpp.o -c /home/mengfan/project/test/base/ClientBase.cpp
+
+CMakeFiles/server.dir/base/ClientBase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/base/ClientBase.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mengfan/project/test/base/ClientBase.cpp > CMakeFiles/server.dir/base/ClientBase.cpp.i
+
+CMakeFiles/server.dir/base/ClientBase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/base/ClientBase.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mengfan/project/test/base/ClientBase.cpp -o CMakeFiles/server.dir/base/ClientBase.cpp.s
+
+CMakeFiles/server.dir/base/ClientBase.cpp.o.requires:
+
+.PHONY : CMakeFiles/server.dir/base/ClientBase.cpp.o.requires
+
+CMakeFiles/server.dir/base/ClientBase.cpp.o.provides: CMakeFiles/server.dir/base/ClientBase.cpp.o.requires
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/ClientBase.cpp.o.provides.build
+.PHONY : CMakeFiles/server.dir/base/ClientBase.cpp.o.provides
+
+CMakeFiles/server.dir/base/ClientBase.cpp.o.provides.build: CMakeFiles/server.dir/base/ClientBase.cpp.o
+
+
 CMakeFiles/server.dir/base/study.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/base/study.cpp.o: ../base/study.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mengfan/project/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/base/study.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mengfan/project/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server.dir/base/study.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/base/study.cpp.o -c /home/mengfan/project/test/base/study.cpp
 
 CMakeFiles/server.dir/base/study.cpp.i: cmake_force
@@ -105,9 +129,57 @@ CMakeFiles/server.dir/base/study.cpp.o.provides: CMakeFiles/server.dir/base/stud
 CMakeFiles/server.dir/base/study.cpp.o.provides.build: CMakeFiles/server.dir/base/study.cpp.o
 
 
+CMakeFiles/server.dir/base/network.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/base/network.cpp.o: ../base/network.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mengfan/project/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/server.dir/base/network.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/base/network.cpp.o -c /home/mengfan/project/test/base/network.cpp
+
+CMakeFiles/server.dir/base/network.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/base/network.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mengfan/project/test/base/network.cpp > CMakeFiles/server.dir/base/network.cpp.i
+
+CMakeFiles/server.dir/base/network.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/base/network.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mengfan/project/test/base/network.cpp -o CMakeFiles/server.dir/base/network.cpp.s
+
+CMakeFiles/server.dir/base/network.cpp.o.requires:
+
+.PHONY : CMakeFiles/server.dir/base/network.cpp.o.requires
+
+CMakeFiles/server.dir/base/network.cpp.o.provides: CMakeFiles/server.dir/base/network.cpp.o.requires
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/network.cpp.o.provides.build
+.PHONY : CMakeFiles/server.dir/base/network.cpp.o.provides
+
+CMakeFiles/server.dir/base/network.cpp.o.provides.build: CMakeFiles/server.dir/base/network.cpp.o
+
+
+CMakeFiles/server.dir/base/ServerBase.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/base/ServerBase.cpp.o: ../base/ServerBase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mengfan/project/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/server.dir/base/ServerBase.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/base/ServerBase.cpp.o -c /home/mengfan/project/test/base/ServerBase.cpp
+
+CMakeFiles/server.dir/base/ServerBase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/base/ServerBase.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mengfan/project/test/base/ServerBase.cpp > CMakeFiles/server.dir/base/ServerBase.cpp.i
+
+CMakeFiles/server.dir/base/ServerBase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/base/ServerBase.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mengfan/project/test/base/ServerBase.cpp -o CMakeFiles/server.dir/base/ServerBase.cpp.s
+
+CMakeFiles/server.dir/base/ServerBase.cpp.o.requires:
+
+.PHONY : CMakeFiles/server.dir/base/ServerBase.cpp.o.requires
+
+CMakeFiles/server.dir/base/ServerBase.cpp.o.provides: CMakeFiles/server.dir/base/ServerBase.cpp.o.requires
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/ServerBase.cpp.o.provides.build
+.PHONY : CMakeFiles/server.dir/base/ServerBase.cpp.o.provides
+
+CMakeFiles/server.dir/base/ServerBase.cpp.o.provides.build: CMakeFiles/server.dir/base/ServerBase.cpp.o
+
+
 CMakeFiles/server.dir/server/src/main.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/server/src/main.cpp.o: ../server/src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mengfan/project/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server.dir/server/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mengfan/project/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/server.dir/server/src/main.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/server/src/main.cpp.o -c /home/mengfan/project/test/server/src/main.cpp
 
 CMakeFiles/server.dir/server/src/main.cpp.i: cmake_force
@@ -129,47 +201,27 @@ CMakeFiles/server.dir/server/src/main.cpp.o.provides: CMakeFiles/server.dir/serv
 CMakeFiles/server.dir/server/src/main.cpp.o.provides.build: CMakeFiles/server.dir/server/src/main.cpp.o
 
 
-CMakeFiles/server.dir/server/src/network.cpp.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/server/src/network.cpp.o: ../server/src/network.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mengfan/project/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/server.dir/server/src/network.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/server/src/network.cpp.o -c /home/mengfan/project/test/server/src/network.cpp
-
-CMakeFiles/server.dir/server/src/network.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/server/src/network.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mengfan/project/test/server/src/network.cpp > CMakeFiles/server.dir/server/src/network.cpp.i
-
-CMakeFiles/server.dir/server/src/network.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/server/src/network.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mengfan/project/test/server/src/network.cpp -o CMakeFiles/server.dir/server/src/network.cpp.s
-
-CMakeFiles/server.dir/server/src/network.cpp.o.requires:
-
-.PHONY : CMakeFiles/server.dir/server/src/network.cpp.o.requires
-
-CMakeFiles/server.dir/server/src/network.cpp.o.provides: CMakeFiles/server.dir/server/src/network.cpp.o.requires
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/src/network.cpp.o.provides.build
-.PHONY : CMakeFiles/server.dir/server/src/network.cpp.o.provides
-
-CMakeFiles/server.dir/server/src/network.cpp.o.provides.build: CMakeFiles/server.dir/server/src/network.cpp.o
-
-
 # Object files for target server
 server_OBJECTS = \
 "CMakeFiles/server.dir/base/NetHandle.cpp.o" \
+"CMakeFiles/server.dir/base/ClientBase.cpp.o" \
 "CMakeFiles/server.dir/base/study.cpp.o" \
-"CMakeFiles/server.dir/server/src/main.cpp.o" \
-"CMakeFiles/server.dir/server/src/network.cpp.o"
+"CMakeFiles/server.dir/base/network.cpp.o" \
+"CMakeFiles/server.dir/base/ServerBase.cpp.o" \
+"CMakeFiles/server.dir/server/src/main.cpp.o"
 
 # External object files for target server
 server_EXTERNAL_OBJECTS =
 
 server: CMakeFiles/server.dir/base/NetHandle.cpp.o
+server: CMakeFiles/server.dir/base/ClientBase.cpp.o
 server: CMakeFiles/server.dir/base/study.cpp.o
+server: CMakeFiles/server.dir/base/network.cpp.o
+server: CMakeFiles/server.dir/base/ServerBase.cpp.o
 server: CMakeFiles/server.dir/server/src/main.cpp.o
-server: CMakeFiles/server.dir/server/src/network.cpp.o
 server: CMakeFiles/server.dir/build.make
 server: CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mengfan/project/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mengfan/project/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -178,9 +230,11 @@ CMakeFiles/server.dir/build: server
 .PHONY : CMakeFiles/server.dir/build
 
 CMakeFiles/server.dir/requires: CMakeFiles/server.dir/base/NetHandle.cpp.o.requires
+CMakeFiles/server.dir/requires: CMakeFiles/server.dir/base/ClientBase.cpp.o.requires
 CMakeFiles/server.dir/requires: CMakeFiles/server.dir/base/study.cpp.o.requires
+CMakeFiles/server.dir/requires: CMakeFiles/server.dir/base/network.cpp.o.requires
+CMakeFiles/server.dir/requires: CMakeFiles/server.dir/base/ServerBase.cpp.o.requires
 CMakeFiles/server.dir/requires: CMakeFiles/server.dir/server/src/main.cpp.o.requires
-CMakeFiles/server.dir/requires: CMakeFiles/server.dir/server/src/network.cpp.o.requires
 
 .PHONY : CMakeFiles/server.dir/requires
 
