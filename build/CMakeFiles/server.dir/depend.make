@@ -26,9 +26,17 @@ CMakeFiles/server.dir/base/study.cpp.o: ../base/common.h
 CMakeFiles/server.dir/base/study.cpp.o: ../base/study.cpp
 CMakeFiles/server.dir/base/study.cpp.o: ../base/study.h
 
+CMakeFiles/server.dir/server/src/Server.cpp.o: ../base/NetHandle.h
+CMakeFiles/server.dir/server/src/Server.cpp.o: ../base/ServerBase.h
+CMakeFiles/server.dir/server/src/Server.cpp.o: ../base/common.h
+CMakeFiles/server.dir/server/src/Server.cpp.o: ../base/network.h
+CMakeFiles/server.dir/server/src/Server.cpp.o: ../server/include/Server.h
+CMakeFiles/server.dir/server/src/Server.cpp.o: ../server/src/Server.cpp
+
 CMakeFiles/server.dir/server/src/main.cpp.o: ../base/NetHandle.h
 CMakeFiles/server.dir/server/src/main.cpp.o: ../base/ServerBase.h
 CMakeFiles/server.dir/server/src/main.cpp.o: ../base/common.h
 CMakeFiles/server.dir/server/src/main.cpp.o: ../base/network.h
+CMakeFiles/server.dir/server/src/main.cpp.o: ../server/include/Server.h
 CMakeFiles/server.dir/server/src/main.cpp.o: ../server/src/main.cpp
 

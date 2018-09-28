@@ -1,10 +1,11 @@
 #include<iostream>
-#include"../../base/ServerBase.h"
+#include"Server.h"
 using namespace std;
 
 int main()
 {
-	CServiceBase service(8005);
+	CCService service;
+	service.Init(8005);
 	service.run();
 	return 0;
 }

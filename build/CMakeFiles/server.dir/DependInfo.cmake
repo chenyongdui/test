@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/mengfan/project/test/base/ServerBase.cpp" "/home/mengfan/project/test/build/CMakeFiles/server.dir/base/ServerBase.cpp.o"
   "/home/mengfan/project/test/base/network.cpp" "/home/mengfan/project/test/build/CMakeFiles/server.dir/base/network.cpp.o"
   "/home/mengfan/project/test/base/study.cpp" "/home/mengfan/project/test/build/CMakeFiles/server.dir/base/study.cpp.o"
+  "/home/mengfan/project/test/server/src/Server.cpp" "/home/mengfan/project/test/build/CMakeFiles/server.dir/server/src/Server.cpp.o"
   "/home/mengfan/project/test/server/src/main.cpp" "/home/mengfan/project/test/build/CMakeFiles/server.dir/server/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

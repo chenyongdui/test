@@ -1,16 +1,26 @@
 #include"ClientBase.h"
 
-CClientBase::CClientBase(const char* ip, int port)
+CClientBase::CClientBase()
+{	
+}
+
+CClientBase::~CClientBase()
+{
+}
+
+bool CClientBase::Init(const char* ip, int port)
 {
 	m_cConnectServer = std::shared_ptr<ConnectServer>(new ConnectServer(m_cIoService));
 	m_cConnectServer->RegisterMsgProcHandle(std::bind(&CClientBase::NetMsgHandle, this, _1));
 	m_cConnectServer->Connect(ip, port);
-	
+	return true;
 }
+
 
 void CClientBase::NetMsgHandle(const char* strMsg)
 {
 	std::cout<<"ReadBody body:"<<strMsg<<std::endl;
+	OnNetMsgHandle(strMsg);
 }
 
 void CClientBase::run_handle()
@@ -20,10 +30,8 @@ void CClientBase::run_handle()
 	{
 		m_iLastTime = time(nullptr);
 		std::cout<<"now"<< now_time <<std::endl;
-		
-		m_cConnectServer->Write("hello 56789哈哈阿凡达发放安抚");
-		
-		m_cConnectServer->Write("你好德尔芬格788yy放松放松是干啥干啥公使馆升格");
+
+		OnRunHandle();
 	}
 	m_cIoService.post(std::bind(&CClientBase::run_handle,this));
 }

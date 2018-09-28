@@ -6,6 +6,34 @@
 
 #IncludeRegexTransform: 
 
+../base/NetHandle.h
+boost/asio.hpp
+-
+boost/enable_shared_from_this.hpp
+-
+common.h
+../base/common.h
+
+../base/ServerBase.h
+common.h
+../base/common.h
+network.h
+../base/network.h
+
+../base/common.h
+iostream
+-
+cstring
+-
+
+../base/network.h
+NetHandle.h
+../base/NetHandle.h
+
+../server/include/Server.h
+../../base/ServerBase.h
+../base/ServerBase.h
+
 /home/mengfan/project/test/base/ClientBase.cpp
 ClientBase.h
 /home/mengfan/project/test/base/ClientBase.h
@@ -64,9 +92,13 @@ NetHandle.h
 iostream
 -
 
+/home/mengfan/project/test/server/src/Server.cpp
+Server.h
+/home/mengfan/project/test/server/src/Server.h
+
 /home/mengfan/project/test/server/src/main.cpp
 iostream
 -
-../../base/ServerBase.h
-/home/mengfan/project/test/base/ServerBase.h
+Server.h
+/home/mengfan/project/test/server/src/Server.h
 

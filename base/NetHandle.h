@@ -30,7 +30,7 @@ private:
 	void ReadBody(const boost::system::error_code & err);
 
 	ip::tcp::socket* m_pSocket;
-	char m_cReadBuffer[1024];
+	char m_cReadBuffer[MAX_NET_MESSAGE_LEN];
 	struct SNetMsgHeader
 	{
 		int m_iBodyLen;

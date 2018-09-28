@@ -26,9 +26,17 @@ CMakeFiles/client.dir/base/study.cpp.o: ../base/common.h
 CMakeFiles/client.dir/base/study.cpp.o: ../base/study.cpp
 CMakeFiles/client.dir/base/study.cpp.o: ../base/study.h
 
+CMakeFiles/client.dir/client/src/Client.cpp.o: ../base/ClientBase.h
+CMakeFiles/client.dir/client/src/Client.cpp.o: ../base/NetHandle.h
+CMakeFiles/client.dir/client/src/Client.cpp.o: ../base/common.h
+CMakeFiles/client.dir/client/src/Client.cpp.o: ../base/network.h
+CMakeFiles/client.dir/client/src/Client.cpp.o: ../client/include/Client.h
+CMakeFiles/client.dir/client/src/Client.cpp.o: ../client/src/Client.cpp
+
 CMakeFiles/client.dir/client/src/main.cpp.o: ../base/ClientBase.h
 CMakeFiles/client.dir/client/src/main.cpp.o: ../base/NetHandle.h
 CMakeFiles/client.dir/client/src/main.cpp.o: ../base/common.h
 CMakeFiles/client.dir/client/src/main.cpp.o: ../base/network.h
+CMakeFiles/client.dir/client/src/main.cpp.o: ../client/include/Client.h
 CMakeFiles/client.dir/client/src/main.cpp.o: ../client/src/main.cpp
 

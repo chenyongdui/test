@@ -26,9 +26,17 @@ CMakeFiles/client.dir/base/study.cpp.o
  /home/mengfan/project/test/base/common.h
  /home/mengfan/project/test/base/study.cpp
  /home/mengfan/project/test/base/study.h
+CMakeFiles/client.dir/client/src/Client.cpp.o
+ ../base/ClientBase.h
+ ../base/NetHandle.h
+ ../base/common.h
+ ../base/network.h
+ ../client/include/Client.h
+ /home/mengfan/project/test/client/src/Client.cpp
 CMakeFiles/client.dir/client/src/main.cpp.o
- /home/mengfan/project/test/base/ClientBase.h
- /home/mengfan/project/test/base/NetHandle.h
- /home/mengfan/project/test/base/common.h
- /home/mengfan/project/test/base/network.h
+ ../base/ClientBase.h
+ ../base/NetHandle.h
+ ../base/common.h
+ ../base/network.h
+ ../client/include/Client.h
  /home/mengfan/project/test/client/src/main.cpp

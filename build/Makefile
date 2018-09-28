@@ -330,6 +330,33 @@ base/study.cpp.s:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/study.cpp.s
 .PHONY : base/study.cpp.s
 
+client/src/Client.o: client/src/Client.cpp.o
+
+.PHONY : client/src/Client.o
+
+# target to build an object file
+client/src/Client.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/src/Client.cpp.o
+.PHONY : client/src/Client.cpp.o
+
+client/src/Client.i: client/src/Client.cpp.i
+
+.PHONY : client/src/Client.i
+
+# target to preprocess a source file
+client/src/Client.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/src/Client.cpp.i
+.PHONY : client/src/Client.cpp.i
+
+client/src/Client.s: client/src/Client.cpp.s
+
+.PHONY : client/src/Client.s
+
+# target to generate assembly for a file
+client/src/Client.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/src/Client.cpp.s
+.PHONY : client/src/Client.cpp.s
+
 client/src/main.o: client/src/main.cpp.o
 
 .PHONY : client/src/main.o
@@ -356,6 +383,33 @@ client/src/main.s: client/src/main.cpp.s
 client/src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/src/main.cpp.s
 .PHONY : client/src/main.cpp.s
+
+server/src/Server.o: server/src/Server.cpp.o
+
+.PHONY : server/src/Server.o
+
+# target to build an object file
+server/src/Server.cpp.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/src/Server.cpp.o
+.PHONY : server/src/Server.cpp.o
+
+server/src/Server.i: server/src/Server.cpp.i
+
+.PHONY : server/src/Server.i
+
+# target to preprocess a source file
+server/src/Server.cpp.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/src/Server.cpp.i
+.PHONY : server/src/Server.cpp.i
+
+server/src/Server.s: server/src/Server.cpp.s
+
+.PHONY : server/src/Server.s
+
+# target to generate assembly for a file
+server/src/Server.cpp.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/src/Server.cpp.s
+.PHONY : server/src/Server.cpp.s
 
 server/src/main.o: server/src/main.cpp.o
 
@@ -413,9 +467,15 @@ help:
 	@echo "... base/study.o"
 	@echo "... base/study.i"
 	@echo "... base/study.s"
+	@echo "... client/src/Client.o"
+	@echo "... client/src/Client.i"
+	@echo "... client/src/Client.s"
 	@echo "... client/src/main.o"
 	@echo "... client/src/main.i"
 	@echo "... client/src/main.s"
+	@echo "... server/src/Server.o"
+	@echo "... server/src/Server.i"
+	@echo "... server/src/Server.s"
 	@echo "... server/src/main.o"
 	@echo "... server/src/main.i"
 	@echo "... server/src/main.s"
